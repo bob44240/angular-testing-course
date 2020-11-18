@@ -12,11 +12,11 @@ import {sortCoursesBySeqNo} from './sort-course-by-seq';
 })
 export class HomeComponent implements OnInit {
 
-    beginnerCourses$: Observable<Course[]>;
+    songs$: Observable<Course[]>;
 
-    advancedCourses$: Observable<Course[]>;
 
-    constructor(private coursesService: CoursesService) {
+
+    constructor(private songsService: CoursesService) {
 
     }
 
